@@ -1,0 +1,14 @@
+
+public class Robot {
+
+	public String name=null;
+
+	public String talk=null;
+
+	public String walk=null;
+
+	public String run=null;
+
+	}
+
+

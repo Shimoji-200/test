@@ -1,0 +1,41 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Person taro=new Person();
+		Robot jiro=new jiro();
+		
+		taro.name="木村次郎";
+		taro.age=18;
+		taro.address="@ezweb";
+		taro.phoneNumber="09012345678";
+		jiro.name="aibo";
+
+		System.out.println(taro.name);
+		System.out.println(taro.age);
+		System.out.println(taro.address);
+		System.out.println(taro.phoneNumber);
+		System.out.println(jiro.name);
+		taro.talk();
+		taro.walk();
+		taro.run();
+		
+
+
+
+
+
+		taro.name="鈴木花子";
+		taro.age=16;
+		taro.address="@docomo";
+		taro.phoneNumber="080987654321";
+
+		System.out.println(taro.name);
+		System.out.println(taro.age);
+		System.out.println(taro.address);
+		System.out.println(taro.phoneNumber);
+		taro.talk();
+		taro.run();
+		taro.walk();
+	}
+}

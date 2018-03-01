@@ -1,0 +1,18 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Person taro=new Person();
+		Parson namber=new Parson();
+		Parson address=new Person();
+		taro.name="木村次郎";
+		taro.age=18;
+		taro.namber=030123456;
+		taro.address="@ezweb";
+		System.out.println(taro.name);
+		System.out.println(taro.age);
+		System.out.println(taro.namber);
+		System.out.println(taro.address);
+	}
+
+}
