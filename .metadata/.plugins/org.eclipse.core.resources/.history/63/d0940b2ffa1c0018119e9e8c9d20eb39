@@ -1,0 +1,13 @@
+
+public class SmartPhone implements Mp3Player,NewFunction{
+
+	public abstract void call();
+
+	public abstract void mail();
+}
+
+
+
+
+
+

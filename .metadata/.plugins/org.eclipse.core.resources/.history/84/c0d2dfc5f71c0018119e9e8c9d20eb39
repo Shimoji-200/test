@@ -1,0 +1,31 @@
+
+public class Iphone {
+
+	public static void main(String[] args) {
+		SmartPhone iphone=new SmartPhone();
+		iphone.play();
+		iphone.stop();
+		iphone.next();
+		iphone.back();
+		//iphone.call();
+		//iphone.mail();
+		//iphone.photo();
+		//iphone.internet();
+	}
+	public interface NewFunction{
+		   public abstract void call();
+		   public abstract void mail();
+		   public abstract void internet();
+	   }
+	   public class Phone{
+		   public void play(){
+			   System.out.println("再生");
+		   }
+	   public void stop(){
+		   System.out.println("停止");
+	   }
+	   public void next(){
+		   System.out.println("次へ");
+	   }
+	   }
+}
