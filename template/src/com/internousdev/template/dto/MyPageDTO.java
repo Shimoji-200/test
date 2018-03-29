@@ -2,19 +2,19 @@ package com.internousdev.template.dto;
 
 public class MyPageDTO {
 
-	public String itemName;
+	private String itemName;
 
-	public String totalPrice;
+	private String totalPrice;
 
-	public String totalCount;
+	private String totalCount;
 
-	public String payment;
+	private String payment;
 
-	public String userName;
-
-	public String id;
-
-	public String insert_date;
+//	private String userName;
+//
+//	private String id;
+//
+//	private String insert_date;
 
 	public String getItemName(){
 		return itemName;
@@ -44,24 +44,24 @@ public class MyPageDTO {
 	public void setPayment(String payment){
 		this.payment=payment;
 	}
-	public String getUserName(){
-		return userName;
-	}
-	public void setUsrName(String userName){
-		this.userName=userName;
-	}
-	public String getId(){
-		return id;
-	}
-	public void setId(String id){
-		this.id=id;
-	}
-
-	public String getInsert_date(){
-		return insert_date;
-	}
-	public void setInsert_date(String insert_date){
-		this.insert_date=insert_date;
-	}
+//	public String getUserName(){
+//		return userName;
+//	}
+//	public void setUsrName(String userName){
+//		this.userName=userName;
+//	}
+//	public String getId(){
+//		return id;
+//	}
+//	public void setId(String id){
+//		this.id=id;
+//	}
+//
+//	public String getInsert_date(){
+//		return insert_date;
+//	}
+//	public void setInsert_date(String insert_date){
+//		this.insert_date=insert_date;
+//	}
 
 }

@@ -10,7 +10,7 @@
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<title>buyItemConfirm画面</title>
+<title>buyItemComplete画面</title>
 <style type="text/css">
 body {
 margin:0;
@@ -26,13 +26,15 @@ table {
 text-align:center;
 margin:0 auto;
 }
-
+/* ========ID LAYOUT======== */
 #top {
 width:780px;
 margin:30px auto;
-}
+前の続きです。
 
+次へ続きます。
 
+buyItemComplete.jspの作成
 
 border:1px solid #333;
 }
@@ -52,7 +54,6 @@ height: 80px;
 background-color: black;
 clear:both;
 }
-
 </style>
 </head>
 <body>
@@ -62,37 +63,21 @@ clear:both;
 		</div>
 	</div>
 	<div id="main">
-			<div id="top">
-				<p>BuyItemConfirm</p>
-				</div>
+		<div id="top">
+			<p>BuyItemComplete</p>
+		</div>
+		<div>
+			<p>購入手続きが完了致しました。</p>
 			<div>
-				<s:form action="BuyItemConfirmAction">
-				<table>
-					<tr>
-						<td>商品名</td>
-						<td><s:property value="session.buyItem_name"/>
-						</td>
-					</tr>
-					<tr>
-						<td>値段</td>
-						<td>
-							<s:property value="session.buyItem_price"/>
-								<span>円</span>
-						</td>
-					<tr>
-						<td>支払い方法</td>
-						<td><s:property value="session.pay"/></td>
-					</tr>
-					<tr>
-						<td><s:submit value="完了"/></td>
-					</tr>
-				</table>
-				</s:form>
+				<a href='<s:url action="MyPageAction"/>'>
+				マイページ</a><span>から購入履歴の確認が可能です。</span>
 			</div>
 		</div>
-		<div id="footer">
-			<div id="pr">
-			</div>
+	</div>
+	<div id="footer">
+		<div id="pr">
 		</div>
+	</div>
+
 </body>
 </html>

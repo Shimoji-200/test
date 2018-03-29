@@ -10,7 +10,7 @@
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<title>buyItemComplete画面</title>
+<title>MyPage画面</title>
 <style type="text/css">
 body {
 margin:0;
@@ -30,12 +30,6 @@ margin:0 auto;
 #top {
 width:780px;
 margin:30px auto;
-前の続きです。
-
-次へ続きます。
-
-buyItemComplete.jspの作成
-
 border:1px solid #333;
 }
 #header {
@@ -58,22 +52,55 @@ clear:both;
 </head>
 <body>
 
-	<div id="header">
-		<div id="pr">
-		</div>
+<div id="header">
+	<div id="pr">
 	</div>
-	<div id="main">
-		<div id="top">
-			<p>BuyItemComplete</p>
-		</div>
-		<div>
-			<p>購入手続きが完了しました。</p>
-			<div>
-				<a href='<s:url action="MyPageAction"/>'>
-				マイページ</a><span>から購入履歴の確認が可能です。</span>
-			</div>
-		</div>
+</div>
+<div id="main">
+	<div id="top">
+		<p>MyPage</p>
 	</div>
+	<div>
+	<s:if test="session.message==''">
+		<h3>ご購入情報は以下になります。</h3>
+			<table>
+				<tr>
+					<td>商品名</td>
+					<td><s:property value="session.buyItem_name"/>
+					</td>
+				</tr>
+				<tr>
+					<td>値段</td>
+					<td>
+						<s:property value="session.total_price"/>
+							<span>円</span>
+					</td>
+				</tr>
+				<tr>
+					<td>購入個数</td>
+					<td>
+						<s:property value="session.total_count"/>
+							<span>個</span>
+						</td>
+					</tr>
+					<tr>
+						<td>支払い方法</td>
+						<td><s:property value="session.total_payment"/></td>
+					</tr>
+				</table>
+				<s:form action="MyPageAction">
+					<input type="hidden" name="deleteFlg" value="1">
+					<s:submit value="削除" methode="delete"/>
+					</s:form>
+				</s:if>
+					<div>
+						<br>
+						<span>前画面に戻る場合は</span>
+						<a href='<s:url action="HomeAction"/>'>ログアウト</a>
+						<span>をお願いします</span>
+					</div>
+		</div>
+</div>
 	<div id="footer">
 		<div id="pr">
 		</div>

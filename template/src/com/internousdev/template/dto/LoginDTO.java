@@ -16,13 +16,13 @@ public class LoginDTO {
 	public String getLoginPassword(){
 		return loginPassword;
 	}
-	public void setLoginpassword(String loginPassword){
+	public void setLoginPassword(String loginPassword){
 		this.loginPassword=loginPassword;
 	}
-	public String getuserName(){
+	public String getUserName(){
 		return userName;
 	}
-	public void setuserName(String userName){
+	public void setUserName(String userName){
 		this.userName=userName;
 	}
 	public boolean getLoginFlg(){
